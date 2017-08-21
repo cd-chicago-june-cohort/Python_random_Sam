@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+  </head>
+  <body>
+    <form action='/info' method='post'>
+        Your Name:
+        <input type='text' name='name'>
+        Dojo Location:
+        <select name="loc">
+            <option value="Chicago, IL">Chicago</option>
+            <option value="San Jose, CA">San Jose</option>
+            <option value="New York, NY">New York</option>
+            <option value="Seattle, WA">Seattle</option>
+        </select>
+        Favorite Language:
+        <select name="lang">
+            <option value="Python">Python</option>
+            <option value="CSS">CSS</option>
+            <option value="Javascript">Javascript</option>
+            <option value="Ruby">Ruby</option>
+        </select>
+        Comment (optional):
+        <textarea name='comments'></textarea>
+        <input type="submit" name="Submit">
+    </form>
+  </body>
+</html>

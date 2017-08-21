@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>It's a turtle!</title>
+  </head>
+  <body>
+    {% if pic == "blue" %}
+        <img src="{{ url_for('static', filename='leonardo.jpg') }}">
+    {% elif pic == "orange" %}
+        <img src="{{ url_for('static', filename='michelangelo.jpg') }}">
+    {% elif pic == "purple" %}
+        <img src="{{ url_for('static', filename='donatello.jpg') }}">
+    {% elif pic == "red" %}
+        <img src="{{ url_for('static', filename='raphael.jpg') }}">
+    {% else %}
+        <img src="{{ url_for('static', filename='notapril.jpg') }}">
+    {% endif %}
+  </body>
+</html>
